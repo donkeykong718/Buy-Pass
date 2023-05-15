@@ -1,0 +1,15 @@
+{
+  "name": "privatetest",
+  "version": "1.0.0",
+  "description": "## Project Name: \"Buy Pass\" ***URL TBD*** ## Project Description Filters Amazon search results for small businesses, then provides user with direct links to company websites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}

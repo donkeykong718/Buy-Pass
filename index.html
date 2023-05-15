@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuyPass</title>
+  <script type="text/javascript" src="config.js"></script>
+  <script type="module" src="index.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="logocontain">
+    <img id="logoarrow" src="./arrowonly.png">
+    <p class="logo">buypass</p>
+  </header>
+  <div id="mobilesearchbox"></div>
+  <div class="topline">
+    <div class="headerbox" id="step1">
+      <h4 class="header">1. Search Global</h4>
+      <p class="subheader">Search Amazon's database of 350+ million products...</p>
+    </div>
+
+    <div class="headerbox mobileinactive" id="step2">
+      <h4 class="header">2. Find Local</h4>
+      <p class="subheader">...for those made by small businesses...</p>
+    </div>
+
+    <div class="headerbox mobileinactive padinactive" id="step3">
+      <h4 class="header">3. Buy Direct</h4>
+      <p class="subheader">...and go straight to the source!</p>
+    </div>
+  </div>
+
+  <main class="container">
+    <div id="searchBox">
+      <form>
+        <input type="text" class="search">
+        <button class="unclicked">Search</button>
+      </form>
+    </div>
+
+    <div class="mobileinactive" id="amazonResultsBox">
+    </div>
+
+    <div class="mobileinactive padinactive" id="googleResultsBox">
+    </div>
+
+    <div id="loader1" style="text-align: center; font-weight: bold; padding-bottom: 2em;" class="inactive">
+      <p style="font-size: 1.5em; margin-top: .75em; color: navy;">Did you know?</p>
+      <p style="font-size: 1.25em;
+    margin-top: 1.5em;">Amazon's speed comes with a hidden cost:</p>
+      <p style="font-style: italic; font-size: 1.5em; margin-top: .25em; color: crimson">worker exploitation</p>
+      <div style="margin-top: 10px" class="arrowbox">
+        <img id="arrow1" src="arrowonly.png">
+        <img id="arrow2" src="arrowonly.png">
+        <img id="arrow3" src="arrowonly.png">
+        <img id="arrow4" src="arrowonly.png">
+        <p style="margin: auto; padding: auto;">Loading...</p>
+      </div>
+      <p style="font-size: 1.25em; margin-top: 1.5em; margin-bottom: 1em">While you're waiting, learn more by visiting:
+      </p>
+      <a style="font-size: 1.3em" href="https://www.amazonlaborunion.org/"
+        target="_blank">https:/www.amazonlaborunion.org</a>
+    </div>
+
+    <div id="loader2" style="text-align: center; font-weight: bold; padding: 6px;" class="inactive">
+      <p style="font-size: 1.5em; padding: 1.5em;color: rgb(32, 160, 32);">Congrats! You're a good person!</p>
+      <div class="arrowbox">
+        <img id="arrow1" src="./arrowonly.png">
+        <img id="arrow2" src="./arrowonly.png">
+        <img id="arrow3" src="./arrowonly.png">
+        <img id="arrow4" src="./arrowonly.png">
+        <p style="margin: auto; padding: auto;">Loading...</p>
+      </div>
+      <p style="font-size: 1.5em; padding: 1.5em;color: rgb(32, 160, 32);">You should feel good about yourself today.
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    <a style="color: whitesmoke" href="mailto:koll.david@gmail.com">Contact me</a>
+    <a style="color: whitesmoke; text-decoration: none;" href="https://www.amazonlaborunion.org/" target="_blank">Learn
+      more about the Amazon Labor Union</a>
+    <p style="font-size: .5em">Copyright 2023<span style="font-size: .25em">(not really)</span></p>
+  </footer>
+
+</body>
+
+</html>

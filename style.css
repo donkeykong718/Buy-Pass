@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @font-face {
+    font-family: Bookerly;
+    src: url("./Amazon_Typefaces_Complete_Font_Set_Mar2020") format("truetype"); 
+  }
+  font-family: Bookerly;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+.logocontain{
+  position: relative;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  font-size: 75px;
+  padding-top: 1.5em;
+  font-weight: bold;
+  height: auto;
+  overflow: hidden;
+}
+
+#logoarrow{
+  position: absolute;
+  flex: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 60%;
+  max-height: 60%;
+  height: auto;
+  width: auto;
+}
+
+.logo{
+  flex: auto;
+}
+
+.topline {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.headerbox{
+  flex: 0 0 33%;
+  margin-top: 40px;
+}
+
+.header {
+  text-align: center;
+  margin: 5px;
+} 
+
+.subheader{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  max-width: 100vw;
+  padding: 10px;
+  justify-content: space-around;
+  padding-bottom: 2.5em;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  min-width: 0;
+  margin: 2px;
+  padding: 2px;
+}
+
+button{
+  margin: 2px;
+  padding: 2px;
+}
+
+.clicked {
+  margin: 2px;
+  padding: 2px;
+  background-color: darkslategray;
+  color: white;
+}
+
+#loader1 {
+  flex-direction: column;
+  height: fit-content;
+  padding: 1em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: lightgray;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: solid black;
+}
+
+.arrowbox{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  margin: auto;
+  padding: auto;
+  display: flex;
+}
+
+#arrow1{
+  position: absolute;
+  flex: auto;
+  top: 50%;
+  left: 15%;
+  max-width: 60%;
+  max-height: 60%;
+  height: auto;
+  width: auto;
+  animation-name: animateArrow1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animateArrow1 {
+  from {transform: rotate(0deg) translate(0px,-360%);}
+  to {transform: rotate(360deg) translate(0px,-360%);}
+}
+
+#arrow2{
+  position: absolute;
+  flex: auto;
+  top: 50%;
+  left: 15%;
+  transform: rotate(90deg);
+  max-width: 60%;
+  max-height: 60%;
+  height: auto;
+  width: auto;
+  animation-name: animateArrow2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animateArrow2 {
+  from {transform: rotate(90deg) translate(0px,-360%);}
+  to {transform: rotate(450deg) translate(0px,-360%);}
+}
+
+#arrow3{
+  position: absolute;
+  flex: auto;
+  top: 50%;
+  left: 15%;
+  transform: rotate(180deg);
+  max-width: 60%;
+  max-height: 60%;
+  height: auto;
+  width: auto;
+  animation-name: animateArrow3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animateArrow3 {
+  from {transform: rotate(180deg) translate(0px,-360%);}
+  to {transform: rotate(540deg) translate(0px,-360%);}
+}
+
+#arrow4{
+  position: absolute;
+  flex: auto;
+  top: 50%;
+  left: 15%;
+  transform: rotate(270deg);
+  max-width: 60%;
+  max-height: 60%;
+  height: auto;
+  width: auto;
+  animation-name: animateArrow4;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animateArrow4 {
+  from {transform: rotate(270deg) translate(0px,-360%);}
+  to {transform: rotate(630deg) translate(0px,-360%);}
+}
+
+#loader2 {
+  flex-direction: column;
+  height: fit-content;
+  padding: 2em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: lightgray;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: solid black;
+}
+
+.amazoncard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  border: solid lightgray;
+  border-style: groove;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.image {
+  max-width: 150px;
+  max-height: 150px;
+} 
+
+.content {
+  flex: auto;
+  padding: 2px;
+  text-align: center;
+}
+
+.title {
+  flex: auto;
+  min-width: 0;
+}
+
+.addInfo {
+  flex: auto;
+  min-width: 0;
+  font-weight: bold;
+}
+
+.buttonBox {
+  display: flex;
+  min-width: 0;
+  justify-content: space-between; 
+  margin: 5px;
+}
+
+.googlecard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  border: solid lightgray;
+  border-style: groove;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.googletitle {
+  text-align: center;
+  min-width: 0;
+  font-weight: bold;
+  margin: 2px;
+}
+
+.snippet{
+  min-width: 0;
+  text-align: left;
+  margin: 2px;
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  width: 100vw;  
+  padding: 10px;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  border-top: ridge 1px dimgrey;
+  background-color: darkgrey;
+  color: whitesmoke;
+}
+
+.inactive {
+  display: none;
+}
+
+.mobilesearch {
+  display: none;
+}
+
+/* MOBILE DISPLAY OPTIONS */
+
+@media (max-width: 480px) {
+  .mobileinactive{
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  
+  header{
+    font-size: 35px;
+  }
+
+  .headerbox{
+    flex: 0 0 100%;
+    margin-top: 15px;
+    font-size: 17px;
+  }
+
+  .subheader{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 10px;
+    justify-content: space-around;
+  }
+
+  .amazoncard {
+    margin: 0 17px 10px 0;
+  }
+
+  .googlecard {
+    margin: 0 17px 10px 0;
+  }
+
+  .image{
+    max-width: 100px;
+    max-height: 100px;
+  }   
+  
+  .content{
+    font-size: 14px;
+  }
+
+  .mobilesearch {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+  }
+}
+
+/* iPAD DISPLAY OPTIONS */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .padinactive{
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  
+  header{
+    margin-top: 10px;
+    font-size: 50px;
+   }
+
+  .headerbox{
+    flex: 0 0 50%;
+    margin-top: 30px;
+    font-size: 17px;
+  }
+
+  .subheader{
+    margin-bottom: 10px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-around;
+  }
+
+  .amazoncard {
+    margin: 0 17px 10px 0;
+  }
+
+  .googlecard {
+    margin: 0 17px 10px 0;
+  }
+
+  .image{
+    max-width: 100px;
+    max-height: 100px;
+  }   
+  
+  .content{
+    font-size: 14px;
+  }
+
+  .mobilesearch {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+  }
+}
