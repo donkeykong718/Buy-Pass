@@ -6,7 +6,7 @@ export default function AmazonCard(result) {
   const { asin, image, link, title, price, rating, ratings_total } = result;
 
   return (
-    <div className="amazoncard">
+    <div className="font-Ember">
       <Image src={image} alt="product" />
       <p className="title content">{title}</p>
       <p className="content">
